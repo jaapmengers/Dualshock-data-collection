@@ -30,21 +30,3 @@ events.bufferWithCount(250).map(x => {
     }
   }, []);
 }).subscribe(x => console.log('done', x));
-
-// .reduce((acc, cur) => {
-//
-//   global.count += 1;
-//
-//   console.log(global.count);
-//
-//   if(acc.length === 0) {
-//     return $V(cur);
-//   } else {
-//     const res = acc.add($V(cur));
-//     return res;
-//   }
-// }, []).subscribe((x) => console.log('Done'));
-
-// controller.onAny(function(event, value){
-//     console.log(event, value);
-// });
